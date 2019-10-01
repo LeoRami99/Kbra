@@ -1,0 +1,98 @@
+body, html
+{
+	background: linear-gradient(98deg, #456990, #5933CE, #297BD0 100%);
+	/*-webkit-text-fill-color:transparent;*/
+	margin:0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	/*animation: changeColor 10s ease infinite;*/
+	/*background-image: url(../images/hola.png);*/
+	background-size: cover;
+	font-family: sans-serif;
+}
+.contenedor
+{
+	border:3px solid #ffffff;
+	/*background-color: rgb(37,47,78); opacity: 0.6;*/
+	text-align: center;
+	padding: 17px;
+	width: 300px;
+	border-radius: 5px;
+	position: absolute;
+	margin: 0 auto;
+	top:50%;
+	left: 50%;
+	box-shadow:2px 5px 6px #000000;
+	transform: translate(-50%,-50%);
+	transition: opacity 1s;
+}
+.contenedor:hover{
+	opacity: 1;
+}
+.inputs{
+	box-sizing: border-box;
+	display: inline-grid;
+}
+.cajas{
+	border-radius: 5px;
+	display: inline-block;
+	padding: 15px;
+	transition:border-radius 0.5s, box-shadow 0.5s, background-color 1s;
+	margin: 10px;
+	width: 200px;
+	border:2px solid #ffffff;
+	font-size: 13px;
+	font-weight: bold;
+	color:#ffffff;
+	background:transparent;
+	box-shadow:2px 5px 6px #000000;
+}
+.cajas:hover{
+	border-radius: 10px;
+	background-color: gray;
+}
+.boton-entrar{
+	padding: 10px;
+	font-size: 15px;
+	font-weight: bold;
+	border:3px solid #ffffff;
+	background: transparent;
+	color:#ffffff;
+	border-radius: 5px;
+	transition: border-radius 0.5s;
+	box-shadow:2px 5px 6px #000000;
+}
+.boton-entrar:hover{
+	border-radius: 15px;
+	/*background-color: #8B8B8B;*/
+}
+.boton-entrar:active{
+	padding: 10px;
+	box-shadow: inset 5px 5px #000000;
+	border: #E34A4A solid;
+}
+.titulo-login{
+	color:#FFFFFF;
+	text-shadow: 2px 2px #262626;
+}
+.ulr-reg{
+	color:#FFFFFF;
+}
+@media(max-width: 400px){
+	.contenedor{
+		width: 90%;
+		background:transparent;
+		box-shadow: 0px 0px 0px #000000;
+		border:0px solid #0000;
+	}	
+}
+@keyframes changeColor {
+  from { background-color: #EEDA36; }
+  25%{	background-color: #8138BE;}
+  50%{background-color: #4C9FCC;}
+  75%{background-color: #D34A4A;}  
+   to { background-color: #D77E32; }  
+}
+
